@@ -1,0 +1,42 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "ionion_identitypool_9027f805",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "ionion9027f805",
+    "userPoolName": "ionion_userpool_9027f805",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "ionion9027f805_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "ionion",
+    "sharedId": "9027f805",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}

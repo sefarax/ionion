@@ -1,1 +1,69 @@
-{}
+{
+  "api": {
+    "ionionapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ionionposts"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "ionion": {
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "managed"
+    }
+  },
+  "function": {
+    "ionionposts": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_ionionposts_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ionionposts"
+        }
+      ]
+    },
+    "AMPLIFY_function_ionionposts_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ionionposts"
+        }
+      ]
+    }
+  }
+}

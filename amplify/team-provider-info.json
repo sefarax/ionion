@@ -1,15 +1,30 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-ionion-dev-f0aba-authRole",
-      "UnauthRoleArn": "arn:aws:iam::381491833763:role/amplify-ionion-dev-f0aba-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::381491833763:role/amplify-ionion-dev-f0aba-authRole",
+      "AuthRoleName": "amplify-ionion-dev-9fb64-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381491833763:role/amplify-ionion-dev-9fb64-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381491833763:role/amplify-ionion-dev-9fb64-authRole",
       "Region": "ca-central-1",
-      "DeploymentBucketName": "amplify-ionion-dev-f0aba-deployment",
-      "UnauthRoleName": "amplify-ionion-dev-f0aba-unauthRole",
-      "StackName": "amplify-ionion-dev-f0aba",
-      "StackId": "arn:aws:cloudformation:ca-central-1:381491833763:stack/amplify-ionion-dev-f0aba/86661a80-418c-11ef-82ef-0649ec0b7381",
-      "AmplifyAppId": "d54gtupje284c"
+      "DeploymentBucketName": "amplify-ionion-dev-9fb64-deployment",
+      "UnauthRoleName": "amplify-ionion-dev-9fb64-unauthRole",
+      "StackName": "amplify-ionion-dev-9fb64",
+      "StackId": "arn:aws:cloudformation:ca-central-1:381491833763:stack/amplify-ionion-dev-9fb64/ce903d70-4224-11ef-b83b-0e649c53c805",
+      "AmplifyAppId": "d1dbyuot8uohp1",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-ionion-dev-9fb64-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "ionionposts": {
+          "deploymentBucketName": "amplify-ionion-dev-9fb64-deployment",
+          "s3Key": "amplify-builds/ionionposts-482b676f6f59574e3372-build.zip"
+        }
+      },
+      "auth": {
+        "ionion": {}
+      },
+      "api": {
+        "ionionapi": {}
+      }
     }
   }
 }
